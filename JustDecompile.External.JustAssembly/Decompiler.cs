@@ -306,7 +306,7 @@ namespace JustDecompile.External.JustAssembly
 			return filePathsAnalyzer.GetMaximumPossibleTargetPathLength();
 		}
 
-		public static IAssemblyDecompilationResults GenerateFiles(string assemblyFilePath, AssemblyDefinition assembly, string targetPath, SupportedLanguage language,  CancellationToken cancellationToken, bool decompileDangerousResources, IFileGenerationNotifier notifier = null)
+		public static IAssemblyDecompilationResults GenerateFiles(string assemblyFilePath, AssemblyDefinition assembly, string targetPath, SupportedLanguage language,  CancellationToken cancellationToken, bool decompileDangerousResources, bool writeDocumentation, IFileGenerationNotifier notifier = null)
 		{
 			ILanguage decompilerLanguage = GetLanguage(language);
 			string csprojFileName = Path.ChangeExtension(Path.GetFileName(assemblyFilePath), decompilerLanguage.VSProjectFileExtension);
@@ -317,7 +317,8 @@ namespace JustDecompile.External.JustAssembly
 
             IDecompilationPreferences decompilationPreferences = new DecompilationPreferences()
             {
-                DecompileDangerousResources = decompileDangerousResources
+                DecompileDangerousResources = decompileDangerousResources,
+                WriteDocumentation = writeDocumentation
             };
 
             JustAssemblyProjectBuilder projectBuilder;
