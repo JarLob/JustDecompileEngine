@@ -29,12 +29,12 @@ is a console app that exposes that functionality and makes testing easy. When st
 
 We encourage and support an active, healthy community that accepts contributions from the public. We'd like you to be a part of that community.
 
-Before submitting a pull request, please, read and sign the [Contributors License Agreement](https://drive.google.com/open?id=1HUQQ4snF53eSXWrKtuqei6cQ_NTRhgQpz1oXh5W_UB4&authuser=0)
+Before submitting a pull request, please, read and sign the [Contributors License Agreement](https://docs.google.com/forms/d/e/1FAIpQLSdjOagw622VxQLrWOsnsLoqvncwJ_DfPmC9hyiYci8iaVWONQ/viewform)
 
 ## How to Contribute to JustDecompile
 
 
-[Feature Suggestions](http://justdecompile.uservoice.com)
+[Feature Suggestions](https://feedback.telerik.com/Project/189)
 
 [Bug Reports / Discussion](https://www.telerik.com/forums/justdecompile/general-discussions)
 
